@@ -1,0 +1,33 @@
+@page {
+    size: letter;   /* Set the paper size to be 8.5x11 inches (letter) */
+    margin: 1in;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Times New Roman", serif;  /* Choose an appropriate font for print */
+    background-image: none; /* Prevent display of background images */
+}
+
+a {
+    text-decoration: none;  /* Remove the underline from the <a> tags */
+}
+
+a:after {
+    content: " (" attr(href) ")";   /* Add the URL of the <a> tag after the text */
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+h2 {
+    break-after: avoid; /* Prevent breaks within sections and paragraphs */
+    padding-top: 15px;  /* Use margins or padding to add white-space between paragraphs */
+}
+
+.no-print {
+    display: none;  /* Prevent display of the navigation and background images */
+}

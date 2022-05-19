@@ -1,0 +1,88 @@
+:root {
+    /* --nav-width: 177px;
+    --header-height: 77px; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Verdana", Verdana, sans-serif;
+    position: relative;
+    top: 0;
+}
+
+#loading {
+    height: 2000px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 700;
+    /* Image credit to http://www.ajaxload.info/ */
+    background: #fff url('../images/ajax-loader.gif') no-repeat center 300px / 33%;
+    font-family: cursive, sans-serif;
+    font-size: 3rem;
+    padding-top: 100px;
+    text-align: center;
+}
+
+article {
+    position: absolute;
+    /* top: var(--header-height); */
+    left: 0;
+    width: calc(100% - 50px);
+    margin: 5px;
+    padding: 3px;
+    overflow-y: auto;
+}
+
+article header {
+    position: fixed;
+    top: 0;
+    /* height: var(--header-height); */
+    width: 100%;
+    border-bottom: 1px solid #000;
+    z-index: 500;
+    background-color: #fff;
+}
+
+article nav {
+    position: fixed;
+    top: 5px;
+    left: 0;
+    /* width: var(--nav-width); */
+    padding: 3px;
+}
+
+article nav ul {
+    list-style: none;
+}
+
+article .content {
+    position: absolute;
+    top: 0;
+    /* left: var(--nav-width); */
+        overflow-y: auto;
+    overflow: auto;
+    padding: 5px;
+    /*
+    Image credit: https://www.flickr.com/photos/7963424@N08/4691644631
+    License: https://creativecommons.org/licenses/by/2.0/deed.en
+    No changes made
+    */
+    /* https://css-tricks.com/perfect-full-page-background-image/ */
+    background: url('../images/Parchment.00.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #fff;
+}
+
+.hidden {
+    display: none;
+}
